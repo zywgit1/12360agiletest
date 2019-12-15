@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>注册</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/registerstyle.css">
+
+
+</head>
+<body background="image/login_bg.png">
+
+<div class="login-main">
+    <header class="layui-elip" style="width: 85%;">注册</header>
+    <form class="layui-form">
+        <!--输入用户名-->
+        <div class="layui-input-inline">
+            <div class="layui-inline" style="width: 85%">
+                <input type="text" name="uname" id="username" required  lay-verify="required" placeholder="用户名" autocomplete="off" class="layui-input">
+            </div>
+            <!--判断用户名是否可用的图标 -->
+            <div class="layui-inline">
+                <i class="layui-icon" hidden id="ri" style="color: green; font-weight: bold"></i>
+                <i class="layui-icon" hidden id="le" style="color: red; font-weight: bold">ဆ</i>
+            </div>
+        </div>
+        <!--输入密码-->
+        <div class="layui-input-inline">
+            <div class="layui-inline" style="width: 85%">
+                <input type="text" name="uname" id="adminid" required  lay-verify="required" placeholder="工号" autocomplete="off" class="layui-input">
+            </div>
+
+        </div>
+        <!--输入密码-->
+        <div class="layui-input-inline">
+            <div class="layui-inline" style="width: 85%">
+                <input type="password" name="uname" id="pwd1" required  lay-verify="required" placeholder="密码" autocomplete="off" class="layui-input">
+            </div>
+
+        </div>
+        <!--确认密码-->
+        <div class="layui-input-inline">
+            <div class="layui-inline" style="width: 85%">
+                <input type="password" name="uname" id="pwd2" required  lay-verify="required" placeholder="确认密码" autocomplete="off" class="layui-input">
+            </div>
+
+        </div>
+        <!--姓名-->
+        <div class="layui-input-inline">
+            <div class="layui-inline" style="width: 85%">
+                <input type="text" name="uname" id="ename" required  lay-verify="required" placeholder="姓名" autocomplete="off" class="layui-input">
+            </div>
+
+        </div>
+        <div class="layui-input-inline login-btn" style="width: 85%">
+            <button type="submit" lay-submit lay-filter="sub" class="layui-btn" lay->注册</button>
+        </div>
+        <br/>
+        <p style="width: 85%">
+            <a href="login.html" class="fl">已有账号？立即登录</a>
+            <a href="javascript:;" class="fr">忘记密码？</a>
+        </p>
+    </form>
+</div>
+
+
+<script src="layui/layui.js"></script>
+<script src="js/requesturl.js"></script>
+<script type="text/javascript">
+    layui.use(['form', 'layer','jquery'], function () {
+        var form  = layui.form;
+        var $  = layui.jquery;
+        //为表单添加blur事件
+        $('#uname').blur(function () {
+            var  uname = $('#uname').val();
+            //ajax异步刷新
+            $.ajax({
+                url:'pages/checkUser.php',
+                type:'post',
+                dataType:'text',
+                data:{uname:uname},
+
+                //验证用户名是否可用
+                success:function (data) {
+                    if(data=='1'){
+                        //layer.msg('可以注册')
+                        $('#ri').removeAttr('hidden');
+                        $('#le').attr('hidden','hidden');
+
+                    }else{
+                        //layer.msg('用户名已被占用')
+                        $('#ri').attr('hidden','hidden');
+                        $('#le').removeAttr('hidden');
+                    }
+                }
+            })
+        });
+        //添加表单监听事件
+        form.on('submit(sub)',function () {
+            var username = $("#username").val();
+            var adminid = $("#adminid").val();
+            var pwd1 = $("#pwd1").val();
+            var pwd2 = $("#pwd2").val();
+            var ename = $("#ename").val();
+
+
+            var json = {
+                "username":username,
+                "adminid":adminid,
+                "pwd1":pwd1,
+                "pwd2":pwd2,
+                "ename":ename
+            };
+            $.ajax({
+                type:"post",
+                url:requestUrl+'/register',
+                data:JSON.stringify(json),
+                contentType:'application/json;charset=utf-8',
+                dataType:'json',
+                success : function(data) {
+                    console.log(data);
+                    if (data.status === 200) {
+                        layer.msg('注册成功，2秒后跳转到登录页。。', {icon: 6});
+                        setTimeout("window.location.href = 'login.html';",2000);//延时5秒
+
+                    } else {
+                        alert(data.msg);
+                    }
+                }
+            })
+            //防止页面跳转
+            return false;
+        });
+
+    });
+</script>
+</body>
+</html>

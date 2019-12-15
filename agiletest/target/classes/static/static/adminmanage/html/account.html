@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>账号管理</title>
+</head>
+<style>
+    body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: none;
+    }
+
+    html, body {
+        position: relative;
+        background: #EDF0F5;
+        color: #505458;
+        font-family: "微软雅黑";
+        font-size: 14px;
+    }
+
+    .layui-table thead tr {
+        background-color: #fff;
+    }
+
+    .laytable-cell-1-sel {
+        overflow:  visible !important;
+    }
+
+    .layui-table-cell span {
+        font-weight: bold;
+    }
+
+    .layui-table-body tbody tr {
+        height: 50px;
+    }
+
+    .selectDemo {
+        height: 30px;
+        border: 1px solid #e6e6e6;
+        border-radius: 4px;
+    }
+
+    td .layui-form-select{
+        margin-top: -10px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+
+</style>
+<body>
+
+<div style="position: relative">
+    <table id="demo" lay-filter="test"></table>
+    <div style="position: absolute;top: 620px;left: 400px;z-index: 108">
+        <button type="button" class="layui-btn" onclick="updataTables()">刷新</button>
+        <button type="button" class="layui-btn layui-btn-primary" onclick="saveTables()">保存</button>
+    </div>
+</div>
+
+
+
+<script type="text/html" id="select">
+
+</script>
+<script src="../js/jquery.min.js"></script>
+<script src="../layui/layui.all.js"></script>
+<script src="../js/utils.js"></script>
+<script src="../js/requesturl.js"></script>
+
+
+<script>
+    var tabledata = [];
+    var tableObject = null;
+    layui.use('table', function(){
+        var table = layui.table , form = layui.form;
+        var item = 0;
+        //第一个实例
+        table.on('edit(test)', function(obj){
+            if(tabledata.length===0)
+                tabledata.push(obj.data)
+            else{
+                for(item=0;item<tabledata.length;item++){
+                    if(tabledata[item].id === obj.data.id){
+                        tabledata[item].active = obj.data.active;
+                        break;
+                    }
+                }
+                if(item >= tabledata.length){
+                    tabledata.push(obj.data)
+                }
+            }
+        });
+            tableObject = table.render({
+            elem: '#demo'
+            ,height: 650
+            ,url: requestUrl+'/account' //数据接口
+            ,limits:[10,20,50]
+            ,limit:20
+            ,page: true //开启分页
+            ,cols: [[ //表头
+                {field: 'id', title: 'ID', width:'20%', sort: true, fixed: 'left', stytle: 'color: black'}
+                ,{field: 'username', title: '用户名', width:'20%', stytle: 'color: black'}
+                ,{field: 'adminid', title: '工号', width:'20%', sort: true, stytle: 'color: black'}
+                ,{field: 'ename', title: '备注', width:'20%', stytle: 'color: black'}
+                ,{field: 'active', title: '审核状态(1通过审核 3拒绝审核)', width:'20%', stytle: 'color: black',edit: 'text'}
+            ]],
+            done: function(res, curr, count){
+                //如果是异步请求数据方式，res即为你接口返回的信息。
+                //如果是直接赋值的方式，res即为：{data: [], count: 99} data为当前页数据、count为数据总长度
+            },
+
+        });
+
+    });
+
+    function selectDemo(a) {
+        console.log($(a).attr('data-id'));
+        console.log($(a).val());
+    }
+    function updataTables() {
+        tableObject.reload();
+    }
+    function saveTables() {
+        var token = getCookie("localtoken");
+        var json = {
+            "data":tabledata,
+            "token":token,
+        };
+        $.ajax({
+            type:"post",
+            url:requestUrl+'/updateaccount',
+            data:JSON.stringify(json),
+            contentType:'application/json;charset=utf-8',
+            dataType:'json',
+            success : function(data) {
+                if(data.status===200){
+                    updataTables()
+                    layer.msg('修改权限成功!', {icon: 6});
+                    return;
+                }
+                layer.msg(data.msg, {icon: 5});
+
+            }
+        })
+    }
+</script>
+
+
+
+</body>
+
+

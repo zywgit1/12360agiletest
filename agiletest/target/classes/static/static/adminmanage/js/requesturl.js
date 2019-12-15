@@ -1,0 +1,1 @@
+var requestUrl = "http://localhost:8080/manage";

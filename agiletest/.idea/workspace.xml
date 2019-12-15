@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="24a0dc3f-3ddd-45a2-b490-8f4a1e184dd2" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/agiletest$AgiletestApplicationTests_testTicketRefund.coverage" NAME="AgiletestApplicationTests.testTicketRefund Coverage Results" MODIFIED="1545608268150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.agile.agiletest.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="agiletest" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="F:/apache-maven-3.6.0-bin/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="F:\apache-maven-3.6.0-bin\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UFYeOMl2H02mHbFKOJaOLaR2P6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545012084031" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/static" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\luckboy\Downloads\SpringbootTest-master (2)\SpringbootTest-master\agiletest\src\main\resources\static\static" />
+      <recent name="C:\Users\luckboy\Downloads\SpringbootTest-master (2)\SpringbootTest-master\agiletest\src\main\resources\static\static\images" />
+      <recent name="C:\Users\luckboy\Downloads\SpringbootTest-master (2)\SpringbootTest-master\agiletest\src\main\resources\static\static\adminmanage\image" />
+      <recent name="C:\Users\luckboy\Downloads\SpringbootTest-master (2)\SpringbootTest-master\agiletest\src\main\resources\static\static\adminmanage\html" />
+      <recent name="C:\Users\luckboy\Downloads\SpringbootTest-master (2)\SpringbootTest-master\agiletest\src\main\resources\static\static\adminmanage\css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.agile.agiletest.pojo" />
+      <recent name="com.agile.agiletest.service.impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\luckboy\Downloads\SpringbootTest-master (2)\SpringbootTest-master\agiletest\src\main\resources\static\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AgiletestApplication">
+    <configuration name="AgiletestApplicationTests.testGetPersonInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="agiletest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.agile.agiletest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.agile.agiletest" />
+      <option name="MAIN_CLASS_NAME" value="com.agile.agiletest.AgiletestApplicationTests" />
+      <option name="METHOD_NAME" value="testGetPersonInfo" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgiletestApplicationTests.testPayMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="agiletest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.agile.agiletest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.agile.agiletest" />
+      <option name="MAIN_CLASS_NAME" value="com.agile.agiletest.AgiletestApplicationTests" />
+      <option name="METHOD_NAME" value="testPayMoney" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgiletestApplicationTests.testTicketRefund" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="agiletest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.agile.agiletest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.agile.agiletest" />
+      <option name="MAIN_CLASS_NAME" value="com.agile.agiletest.AgiletestApplicationTests" />
+      <option name="METHOD_NAME" value="testTicketRefund" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgiletestApplicationTests.testtoken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="agiletest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.agile.agiletest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.agile.agiletest" />
+      <option name="MAIN_CLASS_NAME" value="com.agile.agiletest.AgiletestApplicationTests" />
+      <option name="METHOD_NAME" value="testtoken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in agiletest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="agiletest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgiletestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="agiletest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.agile.agiletest.AgiletestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.AgiletestApplicationTests.testPayMoney" />
+      <item itemvalue="JUnit.AgiletestApplicationTests.testGetPersonInfo" />
+      <item itemvalue="JUnit.AgiletestApplicationTests.testTicketRefund" />
+      <item itemvalue="JUnit.AgiletestApplicationTests.testtoken" />
+      <item itemvalue="JUnit.All in agiletest" />
+      <item itemvalue="Spring Boot.AgiletestApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in agiletest" />
+        <item itemvalue="JUnit.AgiletestApplicationTests.testtoken" />
+        <item itemvalue="JUnit.AgiletestApplicationTests.testTicketRefund" />
+        <item itemvalue="JUnit.AgiletestApplicationTests.testGetPersonInfo" />
+        <item itemvalue="JUnit.AgiletestApplicationTests.testPayMoney" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24a0dc3f-3ddd-45a2-b490-8f4a1e184dd2" name="Default Changelist" comment="" />
+      <created>1544964466089</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544964466089</updated>
+      <workItem from="1544964474175" duration="8600000" />
+      <workItem from="1545017388073" duration="168000" />
+      <workItem from="1545017938830" duration="201000" />
+      <workItem from="1545018682191" duration="20405000" />
+      <workItem from="1545185062851" duration="16584000" />
+      <workItem from="1545307192545" duration="1575000" />
+      <workItem from="1545309459843" duration="1383000" />
+      <workItem from="1545447151916" duration="5383000" />
+      <workItem from="1545452581428" duration="569000" />
+      <workItem from="1545476366953" duration="2724000" />
+      <workItem from="1545570467780" duration="5356000" />
+      <workItem from="1545608229536" duration="478000" />
+      <workItem from="1545609076123" duration="84000" />
+      <workItem from="1545625566846" duration="12869000" />
+      <workItem from="1545660563895" duration="27000" />
+      <workItem from="1545789464896" duration="18719000" />
+      <workItem from="1545988655400" duration="7265000" />
+      <workItem from="1546049009722" duration="613000" />
+      <workItem from="1574953908575" duration="2728000" />
+      <workItem from="1574956644224" duration="705000" />
+      <workItem from="1574957360204" duration="3033000" />
+      <workItem from="1575001947084" duration="2260000" />
+      <workItem from="1575027750543" duration="1867000" />
+      <workItem from="1575031068304" duration="4534000" />
+      <workItem from="1575038372555" duration="4299000" />
+      <workItem from="1575075474141" duration="9704000" />
+      <workItem from="1575087081392" duration="232000" />
+      <workItem from="1575087745876" duration="29488000" />
+      <workItem from="1575189393669" duration="616000" />
+      <workItem from="1575298210962" duration="3740000" />
+      <workItem from="1575382806126" duration="6833000" />
+      <workItem from="1575456606907" duration="8011000" />
+      <workItem from="1575471128514" duration="4258000" />
+      <workItem from="1575544942391" duration="953000" />
+      <workItem from="1575546258583" duration="2136000" />
+      <workItem from="1575690274925" duration="4378000" />
+      <workItem from="1575696274427" duration="24505000" />
+      <workItem from="1575729490646" duration="2657000" />
+      <workItem from="1575772055036" duration="266000" />
+      <workItem from="1575773746025" duration="36000" />
+      <workItem from="1575775287061" duration="683000" />
+      <workItem from="1575776871849" duration="50000" />
+      <workItem from="1575778917388" duration="3847000" />
+      <workItem from="1575782841706" duration="27361000" />
+      <workItem from="1575817066066" duration="8245000" />
+      <workItem from="1575894363957" duration="4047000" />
+      <workItem from="1575899370463" duration="3470000" />
+      <workItem from="1575902873451" duration="156000" />
+      <workItem from="1575905441456" duration="5824000" />
+      <workItem from="1575941346711" duration="46600000" />
+      <workItem from="1576065127095" duration="2869000" />
+      <workItem from="1576070547176" duration="9000" />
+      <workItem from="1576415602132" duration="1729000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+</project>
